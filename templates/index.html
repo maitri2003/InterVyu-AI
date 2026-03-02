@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Interview Analyzer</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f9;
+            text-align: center;
+            padding: 40px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        input, textarea {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>AI Interview Performance Analyzer</h2>
+
+    <form action="/analyze-ui" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" required><br>
+        <textarea name="answer_text" placeholder="Enter your interview answer..." rows="4" required></textarea><br>
+        <button type="submit">Analyze</button>
+    </form>
+</div>
+
+</body>
+</html>
