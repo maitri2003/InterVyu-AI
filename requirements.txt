@@ -8,6 +8,9 @@ pandas
 scikit-learn
 
 torch
+torchvision
+torchaudio
+
 transformers
 tokenizers
 
